@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinária Oriental: Tradições e Técnicas Autênticas</title>
+    <meta name="author" content="David Grzyb">
+    <meta name="description" content="">
+
+    <!-- Tailwind -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+        .font-family-karla {
+            font-family: karla;
+        }
+    </style>
+
+<link href="assets/img/favicon.png" rel="icon">
+
+    <!-- AlpineJS -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+</head>
+<body class="bg-white font-family-karla">
+
+    <!-- Top Bar Nav -->
+    <nav class="w-full py-4 bg-blue-800 shadow">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
+
+            <nav>
+                <ul class="flex items-center justify-between font-bold text-sm text-white uppercase no-underline">
+                    <li><a class="hover:text-gray-200 hover:underline px-4" href="index.html">Home</a></li>
+                    <li><a class="hover:text-gray-200 hover:underline px-4" href="portal.html">Sobre</a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center text-lg no-underline text-white pr-6">
+                <a class="pl-6" href="https://www.instagram.com/a_clarasant/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="pl-6" href="https://www.x.com/CBarlez/">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="pl-6" href="https://www.linkedin.com/in/ana-clara-dos-santos-silva-761513324/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Text Header -->
+    <header class="w-full container mx-auto">
+        <div class="flex flex-col items-center py-12">
+            <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl" href="#">
+                Culinária Oriental: Tradições e Técnicas Autênticas
+            </a>
+        </div>
+    </header>
+
+    <!-- Topic Nav -->
+    <nav class="w-full py-4 border-t border-b bg-gray-100" x-data="{ open: false }">
+        <div class="block sm:hidden">
+            <a
+                href="#"
+                class="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center"
+                @click="open = !open"
+            >
+                Topics <i :class="open ? 'fa-chevron-down': 'fa-chevron-up'" class="fas ml-2"></i>
+            </a>
+        </div>
+        <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+            <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
+                <a href="blog3.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Harmonização</a>
+                <a href="blog1.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Internacional</a>
+                <a href="blog4.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Mixologia</a>
+                <a href="blog2.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Panificação</a>
+                <a href="blog6.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Oriental</a>
+                <a href="blog5.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Básicas</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mx-auto flex flex-wrap py-6">
+
+        <!-- Post Section -->
+        <section class="w-full md:w-2/3 flex flex-col items-center px-3">
+
+            <article class="flex flex-col shadow my-4">
+                <!-- Article Image -->
+                <a href="#" class="hover:opacity-75">
+                    <img src="assets/img/overlay6.png">
+                </a>
+                <div class="bg-white flex flex-col justify-start p-6">
+                    <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">Culinária Oriental: Tradições e Técnicas Autênticas</a>
+                    <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">Como funciona o curso de Oriental?</a>
+                    <p href="#" class="text-sm pb-8">
+                        By <a href="index.html" class="font-semibold hover:text-gray-800">Clara Barlez</a>, Publicado em 31 de Março de 2023
+                    </p>
+                    <h1 class="text-2xl font-bold pb-3">Introdução</h1>
+                    <p class="pb-3">O curso "Culinária Oriental: Tradições e Técnicas Autênticas" foi desenvolvido por Clara Barlez, uma chef especialista em gastronomia asiática, com o objetivo de compartilhar o profundo conhecimento das tradições culinárias do Oriente. Com uma experiência vasta e uma paixão pela autenticidade, Clara criou este curso para aqueles que desejam explorar e dominar as técnicas e sabores que definem as cozinhas do Japão, China, Tailândia, Coreia e outros países do Leste Asiático.</p>
+                    <h1 class="text-2xl font-bold pb-3">Objetivo</h1>
+                    <p class="pb-3">O objetivo principal deste curso é capacitar os alunos com as habilidades necessárias para preparar pratos autênticos da culinária oriental, respeitando as tradições e técnicas que tornam essas cozinhas tão distintas. Clara Barlez guia os participantes através de práticas culinárias ancestrais, desde o preparo de sushi e sashimi até o uso de wok e a arte da fermentação, como o kimchi coreano. Ao final do curso, os alunos estarão aptos a criar pratos orientais com precisão e autenticidade, incorporando os sabores únicos dessa região.</p>
+                    <h1 class="text-2xl font-bold pb-3">Metodologia</h1>
+                    <p class="pb-3">Clara Barlez combina a teoria com práticas intensivas, onde os alunos têm a oportunidade de recriar receitas autênticas e experimentar técnicas tradicionais sob sua orientação. As sessões práticas são projetadas para incentivar a familiaridade com os ingredientes típicos e o domínio das técnicas específicas de cada região. Clara também compartilha o contexto cultural e histórico que influencia cada prato, oferecendo uma compreensão mais profunda da culinária oriental.</p>
+                    <h1 class="text-2xl font-bold pb-3">Conclusão</h1>
+                    <p class="pb-3">Ao completar o curso "Culinária Oriental: Tradições e Técnicas Autênticas", os alunos terão adquirido uma base sólida nas práticas culinárias orientais. Eles estarão preparados para aplicar essas habilidades em cozinhas profissionais ou em suas próprias criações, respeitando a essência das tradições asiáticas. Clara Barlez acredita que entender e preservar essas tradições é essencial para qualquer chef que aspire a dominar a gastronomia global.</p>
+                </div>
+            </article>
+
+            <div class="w-full flex pt-6">
+                <a href="blog2.html" class="w-1/2 bg-white shadow hover:shadow-md text-left p-6">
+                    <p class="text-lg text-blue-800 font-bold flex items-center"><i class="fas fa-arrow-left pr-1"></i> Anterior</p>
+                    <p class="pt-2">Cozinha Essencial: Primeiros Passos na Gastronomia</p>
+                </a>
+                <a href="blog1.html" class="w-1/2 bg-white shadow hover:shadow-md text-right p-6">
+                    <p class="text-lg text-blue-800 font-bold flex items-center justify-end">Próximo <i class="fas fa-arrow-right pl-1"></i></p>
+                    <p class="pt-2">Mixologia Moderna: O Universo dos Drinks e Coquetéis</p>
+                </a>
+            </div>
+
+            <div class="w-full flex flex-col text-center md:text-left md:flex-row shadow bg-white mt-10 mb-10 p-6">
+                <div class="w-full md:w-1/5 flex justify-center md:justify-start pb-4">
+                    <img src="assets/img/user_photo.jpg" class="rounded-full shadow h-32 w-32">
+                </div>
+                <div class="flex-1 flex flex-col justify-center md:justify-start">
+                    <p class="font-semibold text-2xl">Clara</p>
+                    <p class="pt-2">Espero ajudar todos os que querem ter sucesso dentro do mundo culinário e vivenciar essa arte.</p>
+                    <div class="flex items-center justify-center md:justify-start text-2xl no-underline text-blue-800 pt-4">
+                        <a class="pl-4" href="https://www.instagram.com/a_clarasant/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="pl-4" href="https://www.x.com/CBarlez/">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="pl-4" href="https://www.linkedin.com/in/ana-clara-dos-santos-silva-761513324/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sidebar Section -->
+        <aside class="w-full md:w-1/3 flex flex-col items-center px-3">
+
+            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <p class="text-xl font-semibold pb-5">Sobre</p>
+                <p class="pb-2">No curso "Culinária Oriental: Tradições e Técnicas Autênticas", oferecemos uma jornada profunda nas práticas e sabores das cozinhas do Oriente. Ministrado por Clara Barlez, uma chef especialista em gastronomia asiática, o curso explora as tradições e técnicas que tornam a culinária oriental única. Os participantes aprenderão a preparar pratos autênticos, desde sushi e sashimi até fermentações como o kimchi, além de dominar o uso do wok e outros métodos tradicionais. Seja você um profissional da gastronomia ou um entusiasta da culinária asiática, este curso proporcionará as habilidades e conhecimentos necessários para criar pratos orientais com precisão e autenticidade.</p>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <footer class="w-full border-t bg-white pb-12">
+        <div class="w-full container mx-auto flex flex-col items-center">
+            <div class="flex flex-col md:flex-row text-center md:text-left md:justify-between py-6">
+                <a href="#" class="uppercase px-3">Sobre Nós</a>
+                <a href="#" class="uppercase px-3">Políticas de privacidade</a>
+                <a href="#" class="uppercase px-3">Termos e Condições</a>
+                <a href="#" class="uppercase px-3">Contate-nos</a>
+            </div>
+            <div class="uppercase pb-6">&copy; essenciabarlez.com</div>
+        </div>
+    </footer>
+
+</body>
+</html>

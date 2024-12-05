@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozinha Essencial: Primeiros Passos na Gastronomia</title>
+    <meta name="author" content="David Grzyb">
+    <meta name="description" content="">
+
+    <!-- Tailwind -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+        .font-family-karla {
+            font-family: karla;
+        }
+    </style>
+
+<link href="assets/img/favicon.png" rel="icon">
+
+    <!-- AlpineJS -->
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+</head>
+<body class="bg-white font-family-karla">
+
+    <!-- Top Bar Nav -->
+    <nav class="w-full py-4 bg-blue-800 shadow">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
+
+            <nav>
+                <ul class="flex items-center justify-between font-bold text-sm text-white uppercase no-underline">
+                    <li><a class="hover:text-gray-200 hover:underline px-4" href="index.html">Home</a></li>
+                    <li><a class="hover:text-gray-200 hover:underline px-4" href="portal.html">Sobre</a></li>
+                </ul>
+            </nav>
+
+            <div class="flex items-center text-lg no-underline text-white pr-6">
+                <a class="pl-6" href="https://www.instagram.com/a_clarasant/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="pl-6" href="https://www.x.com/CBarlez/">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="pl-6" href="https://www.linkedin.com/in/ana-clara-dos-santos-silva-761513324/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Text Header -->
+    <header class="w-full container mx-auto">
+        <div class="flex flex-col items-center py-12">
+            <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl" href="#">
+                Cozinha Essencial: Primeiros Passos na Gastronomia
+            </a>
+        </div>
+    </header>
+
+    <!-- Topic Nav -->
+    <nav class="w-full py-4 border-t border-b bg-gray-100" x-data="{ open: false }">
+        <div class="block sm:hidden">
+            <a
+                href="#"
+                class="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center"
+                @click="open = !open"
+            >
+                Topics <i :class="open ? 'fa-chevron-down': 'fa-chevron-up'" class="fas ml-2"></i>
+            </a>
+        </div>
+        <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+            <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
+                <a href="blog3.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Harmonização</a>
+                <a href="blog1.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Internacional</a>
+                <a href="blog4.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Mixologia</a>
+                <a href="blog2.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Panificação</a>
+                <a href="blog6.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Oriental</a>
+                <a href="blog5.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Básicas</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mx-auto flex flex-wrap py-6">
+
+        <!-- Post Section -->
+        <section class="w-full md:w-2/3 flex flex-col items-center px-3">
+
+            <article class="flex flex-col shadow my-4">
+                <!-- Article Image -->
+                <a href="#" class="hover:opacity-75">
+                    <img src="assets/img/overlay5.png">
+                </a>
+                <div class="bg-white flex flex-col justify-start p-6">
+                    <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4">Cozinha Essencial: Primeiros Passos na Gastronomia</a>
+                    <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4">Como funciona o curso de Gastronomia Básica?</a>
+                    <p href="#" class="text-sm pb-8">
+                        By <a href="index.html" class="font-semibold hover:text-gray-800">Clara Barlez</a>, Publicado em 03 de Maio de 2024
+                    </p>
+                    <h1 class="text-2xl font-bold pb-3">Introdução</h1>
+                    <p class="pb-3">O curso "Cozinha Essencial: Primeiros Passos na Gastronomia" foi criado por Clara Barlez, uma chef experiente dedicada a ensinar os fundamentos da cozinha a iniciantes. Com anos de experiência na formação de novos talentos, Clara desenhou este curso para aqueles que estão dando os primeiros passos na gastronomia. O programa é uma introdução abrangente às técnicas básicas e às práticas essenciais que todo cozinheiro deve dominar, proporcionando uma base sólida para futuras explorações culinárias.</p>
+                    <h1 class="text-2xl font-bold pb-3">Objetivo</h1>
+                    <p class="pb-3">O principal objetivo deste curso é capacitar os alunos com as habilidades básicas necessárias para se tornarem proficientes na cozinha. Clara Barlez ensina os princípios fundamentais, como cortes de vegetais, métodos de cocção, preparo de molhos básicos e técnicas de tempero. Ao final do curso, os participantes estarão equipados com o conhecimento e a confiança para preparar uma variedade de pratos simples, mas deliciosos, em suas próprias cozinhas.</p>
+                    <h1 class="text-2xl font-bold pb-3">Metodologia</h1>
+                    <p class="pb-3">Clara Barlez combina teoria com práticas em laboratório, onde os alunos têm a oportunidade de aplicar imediatamente o que aprenderam. Cada aula é estruturada para permitir que os alunos pratiquem as técnicas discutidas, com orientação personalizada de Clara. O curso enfatiza a prática repetitiva e a atenção aos detalhes, garantindo que os alunos adquiram uma compreensão prática e funcional da cozinha.</p>
+                    <h1 class="text-2xl font-bold pb-3">Conclusão</h1>
+                    <p class="pb-3">Ao completar o curso "Cozinha Essencial: Primeiros Passos na Gastronomia", os alunos terão adquirido as habilidades e o conhecimento necessários para operar com confiança em uma cozinha. Eles estarão preparados para continuar sua jornada culinária, seja cozinhando para si mesmos, para suas famílias ou em busca de uma carreira na gastronomia. Clara Barlez acredita que uma base sólida é o alicerce de qualquer grande chef, e este curso oferece exatamente isso.</p>
+                </div>
+            </article>
+
+            <div class="w-full flex pt-6">
+                <a href="blog2.html" class="w-1/2 bg-white shadow hover:shadow-md text-left p-6">
+                    <p class="text-lg text-blue-800 font-bold flex items-center"><i class="fas fa-arrow-left pr-1"></i> Anterior</p>
+                    <p class="pt-2">Mixologia Moderna: O Universo dos Drinks e Coquetéis</p>
+                </a>
+                <a href="blog1.html" class="w-1/2 bg-white shadow hover:shadow-md text-right p-6">
+                    <p class="text-lg text-blue-800 font-bold flex items-center justify-end">Próximo <i class="fas fa-arrow-right pl-1"></i></p>
+                    <p class="pt-2">Culinária Oriental: Tradições e Técnicas Autênticas</p>
+                </a>
+            </div>
+
+            <div class="w-full flex flex-col text-center md:text-left md:flex-row shadow bg-white mt-10 mb-10 p-6">
+                <div class="w-full md:w-1/5 flex justify-center md:justify-start pb-4">
+                    <img src="assets/img/user_photo.jpg" class="rounded-full shadow h-32 w-32">
+                </div>
+                <div class="flex-1 flex flex-col justify-center md:justify-start">
+                    <p class="font-semibold text-2xl">Clara</p>
+                    <p class="pt-2">Espero ajudar todos os que querem ter sucesso dentro do mundo culinário e vivenciar essa arte.</p>
+                    <div class="flex items-center justify-center md:justify-start text-2xl no-underline text-blue-800 pt-4">
+                        <a class="pl-4" href="https://www.instagram.com/a_clarasant/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="pl-4" href="https://www.x.com/CBarlez/">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="pl-4" href="https://www.linkedin.com/in/ana-clara-dos-santos-silva-761513324/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sidebar Section -->
+        <aside class="w-full md:w-1/3 flex flex-col items-center px-3">
+
+            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <p class="text-xl font-semibold pb-5">Sobre</p>
+                <p class="pb-2">No curso "Cozinha Essencial: Primeiros Passos na Gastronomia", oferecemos uma introdução abrangente ao mundo da culinária, ideal para quem está começando sua jornada na cozinha. Ministrado por Clara Barlez, uma chef experiente e dedicada, o curso cobre os fundamentos essenciais que todo cozinheiro deve dominar. Os participantes aprenderão técnicas básicas de corte, métodos de cocção, preparo de molhos simples e o planejamento de refeições completas. Seja você um iniciante curioso ou alguém que deseja aprimorar suas habilidades na cozinha, este curso proporcionará as bases sólidas necessárias para desenvolver confiança e competência na arte culinária.</p>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <footer class="w-full border-t bg-white pb-12">
+        <div class="w-full container mx-auto flex flex-col items-center">
+            <div class="flex flex-col md:flex-row text-center md:text-left md:justify-between py-6">
+                <a href="#" class="uppercase px-3">Sobre Nós</a>
+                <a href="#" class="uppercase px-3">Políticas de privacidade</a>
+                <a href="#" class="uppercase px-3">Termos e Condições</a>
+                <a href="#" class="uppercase px-3">Contate-nos</a>
+            </div>
+            <div class="uppercase pb-6">&copy; essenciabarlez.com</div>
+        </div>
+    </footer>
+
+</body>
+</html>
